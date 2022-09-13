@@ -1,0 +1,77 @@
+/* звертаємось до всіх об'єктів */
+* {
+	color: black;
+}
+
+/* Тип №1. Селектор тегу
+звертаємось до всіх спанів
+*/
+span {
+	color: crimson;
+}
+
+/* змінюю колір посилань */
+a {
+	color: rgb(95, 29, 29);
+}
+
+/* Тип №2. Селектор класу 
+змінюю колір усіх тегів з класом тайтл*/
+.title {
+	color: darkblue;
+}
+
+/* Тип №3. Селектор ID змінюю колір через селектор айді*/
+#mercedes p {
+	color: red;
+}
+
+/* Усі параграфи з класом text */
+p.text {
+	color: cadetblue;
+}
+
+/* Усі теги з класами red 
+	та text одночасно 
+*/
+.red.text {
+	color: red;
+}
+
+/* Звертаємось відразу до кількох класів */
+.green,
+.yellow {
+	color: yellowgreen;
+}
+
+/* Усі P з класом green в середені div */
+
+div p.green {
+	color: rgb(93, 79, 25);
+}
+
+/* усі параграфи першого рівня після класу dodge*/
+.dodge>p {
+	color: cyan;
+}
+
+
+h2+p {
+	color: green;
+}
+
+.test>p {
+	color: blue;
+}
+
+.test-two~p {
+	color: green;
+}
+
+.test-three+p {
+	color: blueviolet;
+}
+
+img {
+	width: 500px;
+}
