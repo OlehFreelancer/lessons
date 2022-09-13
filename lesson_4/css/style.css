@@ -85,19 +85,14 @@
 
 .test p {
 	color: black;
-}
-
-.test .one {
 	font-family: 'Larsseit';
 }
 
 .test .two {
-	font-family: 'Larsseit';
 	font-weight: 500;
 }
 
 .test .three {
-	font-family: 'Larsseit';
 	font-weight: 700;
 }
 
