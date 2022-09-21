@@ -136,7 +136,7 @@ body {
 	max-width: 300px;
 	min-height: 100px;
 	margin: 0 auto;
-	font-size: 0;
+	font-size: 0px;
 }
 .test-display-blok-3 span {
 	background-color: #0000ff;
