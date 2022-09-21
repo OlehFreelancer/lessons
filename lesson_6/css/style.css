@@ -1,15 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
-/* &display=swap */
-/* 
-@font-face {
-	font-family: "...";
-	src: url("../fonts") format("woff2"), url("../fonts") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-} 
-*/
-
 
 
 
@@ -17,24 +6,18 @@ body {
 	background-color: black;
 }
 [class*="-container"] {
-	max-width: 810px;
+	max-width: 830px;
 	margin: 0 auto;
 	background-color: #fff;
 }
-
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	padding: 15px;
+	padding: 10px;
 }
 
-.header {}
 
 
-.main {}
-.main-container {}
-
-.main-figma {}
 .figma {
 	background-color: #E5E5E5;
 	font-family: "Lato";
@@ -89,7 +72,7 @@ body {
 }
 
 
-.main-test-size {}
+
 .test-size {
 	background-color: #000;
 	color: #d3d3d3;
@@ -112,6 +95,7 @@ body {
 	min-width: 100px;
 	min-height: 50px;
 }
+
 
 
 .test-display {
@@ -160,7 +144,7 @@ body {
 }
 
 
-.main-test-opacity {}
+
 .test-opacity {
 	color: #a9a9a9;
 	background-color: #000;
@@ -195,6 +179,7 @@ body {
 	background-color: #fff;
 	visibility: hidden;
 }
+
 
 
 .footer-container {
