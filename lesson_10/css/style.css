@@ -283,7 +283,8 @@ source {
 }
 .list-benefits__like a:hover,
 .list-benefits__vektor a:hover,
-.list-benefits__community a:hover {
+.list-benefits__community a:hover,
+.list-benefits__star a:hover {
 	color: #424551;
 }
 .list-benefits__star a {
