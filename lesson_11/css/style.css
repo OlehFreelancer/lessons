@@ -165,7 +165,8 @@ header:target .header__top {
 	padding: 40px 20px;
 	position: sticky;
 	top: 150px;
-	left: 100%;
+	/* left: 100%; */
+	right: 0;
 	background-color: #1b005b;
 	max-width: 15%;
 	border-radius: 7px;
