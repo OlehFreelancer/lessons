@@ -73,7 +73,6 @@ header:target .header__top {
 }
 .header__block:target .header__top {
 	left: -100%;
-	overflow: hidden;
 }
 .header__top {
 	position: fixed;
@@ -165,12 +164,11 @@ header:target .header__top {
 	padding: 40px 20px;
 	position: sticky;
 	top: 150px;
-	/* left: 100%; */
-	right: 0;
 	background-color: #1b005b;
 	max-width: 15%;
 	border-radius: 7px;
 	z-index: 5;
+	margin: 0 0 0 auto;
 }
 .main__list li {
 	position: relative;
@@ -254,6 +252,176 @@ header:target .header__top {
 	left: 0;
 	width: 16px;
 	height: 16px;
+}
+
+/* !============================= ROAD MAIN */
+.road-main {
+	position: relative;
+}
+.bus {
+	width: 800px;
+	height: 200px;
+	border: 2px solid #004848;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 20px 20px 10px 10px;
+	z-index: 2;
+	background-color: #260080;
+}
+.bus::before {
+	content: '';
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 2px solid #004848;
+	position: absolute;
+	bottom: 50px;
+	left: -18.5px;
+	z-index: 1;
+}
+.bus::after {
+	content: '';
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 2px solid #004848;
+	position: absolute;
+	bottom: 50px;
+	right: -18.5px;
+	z-index: 1;
+}
+.bus__window {
+	position: absolute;
+	top: 20px;
+	left: 43.75%;
+	border: 2px solid #004848;
+	width: 100px;
+	height: 75px;
+	border-radius: 20px;
+}
+.bus__window::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -270px;
+	width: 100px;
+	height: 75px;
+	border: 2px solid #004848;
+	border-radius: 20px;
+}
+.bus__window::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 270px;
+	width: 100px;
+	height: 75px;
+	border: 2px solid #004848;
+	border-radius: 20px;
+}
+.door--1 {
+	width: 75px;
+	height: 150px;
+	border: 2px solid #004848;
+	position: absolute;
+	bottom: 0;
+	left: 220px;
+}
+.door--2 {
+	width: 75px;
+	height: 150px;
+	border: 2px solid #004848;
+	position: absolute;
+	bottom: 0;
+	left: 505px;
+}
+.door--1 .door__window--1 {
+	width: 20px;
+	height: 75px;
+	border: 2px solid #004848;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.door--1 .door__window--1::after {
+	content: '';
+	position: absolute;
+	bottom: -47px;
+	left: -2px;
+	width: 20px;
+	height: 40px;
+	border: 2px solid #004848;
+}
+.door--1 .door__window--2 {
+	width: 20px;
+	height: 75px;
+	border: 2px solid #004848;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+}
+.door--1 .door__window--2::after {
+	content: '';
+	position: absolute;
+	bottom: -47px;
+	left: -2px;
+	width: 20px;
+	height: 40px;
+	border: 2px solid #004848;
+}
+.door--2 .door__window--1 {
+	width: 20px;
+	height: 75px;
+	border: 2px solid #004848;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.door--2 .door__window--1::after {
+	content: '';
+	position: absolute;
+	bottom: -47px;
+	left: -2px;
+	width: 20px;
+	height: 40px;
+	border: 2px solid #004848;
+}
+.door--2 .door__window--2 {
+	width: 20px;
+	height: 75px;
+	border: 2px solid #004848;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+}
+.door--2 .door__window--2::after {
+	content: '';
+	position: absolute;
+	bottom: -47px;
+	left: -2px;
+	width: 20px;
+	height: 40px;
+	border: 2px solid #004848;
+}
+.bus__wheel--1 {
+	border: 15px solid #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -45px;
+	left: 80px;
+	z-index: 1;
+}
+.bus__wheel--2 {
+	border: 15px solid #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -45px;
+	right: 80px;
+	z-index: 1;
 }
 
 /* !============================= FOOTER */
