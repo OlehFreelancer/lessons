@@ -254,8 +254,8 @@ header:target .header__top {
 	height: 16px;
 }
 
-/* !============================= ROAD MAIN */
-.road-main {
+/* !============================= MAIN BUS*/
+.main__bus {
 	position: relative;
 }
 .bus {
@@ -266,7 +266,6 @@ header:target .header__top {
 	margin: 0 auto;
 	border-radius: 20px 20px 10px 10px;
 	z-index: 2;
-	background-color: #260080;
 }
 .bus::before {
 	content: '';
@@ -323,6 +322,7 @@ header:target .header__top {
 	width: 75px;
 	height: 150px;
 	border: 2px solid #004848;
+	border-radius: 7px;
 	position: absolute;
 	bottom: 0;
 	left: 220px;
@@ -334,6 +334,7 @@ header:target .header__top {
 	position: absolute;
 	bottom: 0;
 	left: 505px;
+	border-radius: 7px;
 }
 .door--1 .door__window--1 {
 	width: 20px;
@@ -342,6 +343,7 @@ header:target .header__top {
 	position: absolute;
 	top: 15px;
 	left: 10px;
+	border-radius: 7px;
 }
 .door--1 .door__window--1::after {
 	content: '';
@@ -351,6 +353,7 @@ header:target .header__top {
 	width: 20px;
 	height: 40px;
 	border: 2px solid #004848;
+	border-radius: 7px;
 }
 .door--1 .door__window--2 {
 	width: 20px;
@@ -359,6 +362,7 @@ header:target .header__top {
 	position: absolute;
 	top: 15px;
 	left: 40px;
+	border-radius: 7px;
 }
 .door--1 .door__window--2::after {
 	content: '';
@@ -368,6 +372,7 @@ header:target .header__top {
 	width: 20px;
 	height: 40px;
 	border: 2px solid #004848;
+	border-radius: 7px;
 }
 .door--2 .door__window--1 {
 	width: 20px;
@@ -376,6 +381,7 @@ header:target .header__top {
 	position: absolute;
 	top: 15px;
 	left: 10px;
+	border-radius: 7px;
 }
 .door--2 .door__window--1::after {
 	content: '';
@@ -385,6 +391,7 @@ header:target .header__top {
 	width: 20px;
 	height: 40px;
 	border: 2px solid #004848;
+	border-radius: 7px;
 }
 .door--2 .door__window--2 {
 	width: 20px;
@@ -393,6 +400,7 @@ header:target .header__top {
 	position: absolute;
 	top: 15px;
 	left: 40px;
+	border-radius: 7px;
 }
 .door--2 .door__window--2::after {
 	content: '';
@@ -402,6 +410,7 @@ header:target .header__top {
 	width: 20px;
 	height: 40px;
 	border: 2px solid #004848;
+	border-radius: 7px;
 }
 .bus__wheel--1 {
 	border: 15px solid #fff;
