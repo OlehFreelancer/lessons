@@ -376,7 +376,6 @@ h2 {
 	background-color: #2a0202;
 }
 /* !======================================== FOOTER */
-.footer {}
 .footer__container {
 	height: 300px;
 	background-color: #444;
@@ -385,7 +384,6 @@ h2 {
 	position: relative;
 
 }
-.car {}
 .car__frontwing,
 .car__front-door,
 .car__back-door,
