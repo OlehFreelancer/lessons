@@ -529,7 +529,6 @@ h2 {
 	top: -22px;
 	left: -11px;
 	z-index: 2;
-	background-color: none;
 	transform: rotate(-50deg);
 }
 .car__backwing::before {
