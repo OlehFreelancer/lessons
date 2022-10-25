@@ -1,0 +1,414 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker:regular&display=swap);
+/* &display=swap */
+/* 
+@font-face {
+	font-family: "...";
+	src: url("../fonts") format("woff2"), url("../fonts") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+} 
+*/
+
+/*.
+.main__image {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: потрібно знайти відсоток висоти зображення / ширину;
+}
+.main__image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}*/
+
+/*
+@media (max-width: px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+@media (max-width: 991.98px){
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+@media (max-width: 767.98px){
+	[class*="__container"] {
+			max-width: px;
+	}
+}
+@media (max-width:479.98px){
+	[class*="__container"] {
+		max-width: none;
+	}	
+}
+*/
+
+
+
+body {
+	background-color: #333;
+}
+
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+	position: relative;
+	padding: 30px 0;
+}
+
+[class*="__container"] {
+	width: 830px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+/* !======================================== HEADER */
+
+/* !======================================== MAIN */
+/* ?======================================== Canvas */
+.main__wrapper {
+	background-color: #444;
+	box-shadow: inset 0 0 20px 1px #fff;
+	height: 600px;
+	perspective: 2000px;
+	padding-top: 30px;
+}
+/* ?======================================== Title*/
+.main__title {
+	text-align: center;
+	font-size: 38px;
+	font-weight: 900;
+	font-family: "Permanent Marker";
+	word-spacing: 20px;
+	background-color: #111;
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 1px #fff;
+}
+.main__title {
+	animation: neon 2s linear infinite;
+}
+@keyframes neon {
+	0% {
+		color: #111;
+	}
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px #00b3ff,
+			0 0 20px #00b3ff,
+			0 0 40px #00b3ff,
+			0 0 40px #00b3ff,
+			0 0 120px #00b3ff,
+			0 0 150px #00b3ff,
+			0 0 200px #00b3ff;
+	}
+}
+/* ?======================================== Platform */
+.platform {
+	width: 600px;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform-style: preserve-3d;
+	/* *======================================== Rotate */
+	transform: rotateX(-25deg);
+}
+.platform__side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: inset 0 0 20px 5px #fff;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+	width: 600px;
+}
+.platform__side--front {
+	height: 40px;
+	transform: translateZ(300px);
+}
+.platform__side--back {
+	height: 40px;
+	transform: rotateY(180deg) translateZ(300px);
+}
+.platform__side--top {
+	height: 600px;
+	transform: rotateX(90deg) translateZ(300px);
+	line-height: 600px;
+	perspective: 100000px;
+	transform-style: preserve-3d;
+	position: relative;
+	font-size: 0px;
+}
+.platform__side--bottom {
+	height: 600px;
+	transform: rotateX(-90deg) translateZ(-260px);
+	line-height: 600px;
+}
+.platform__side--left {
+	height: 40px;
+	transform: rotateY(-90deg) translateZ(-300px);
+}
+.platform__side--right {
+	height: 40px;
+	transform: rotateY(90deg) translateZ(-300px);
+}
+/* ?======================================== Mixer Box*/
+.mixer {
+	transform-style: preserve-3d;
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	left: 25%;
+	top: 20px;
+	transform: translateZ(30px);
+}
+.mixer__box {
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	box-shadow: inset 0 0 5px 2px #555;
+}
+.mixer__box--front {
+	transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(30px);
+	background: url(../img/fls.png)0 0/300px 60px no-repeat;
+}
+.mixer__box--back {
+	transform: rotateX(90deg) translateZ(30px);
+}
+.mixer__box--top {
+	transform: translateZ(30px);
+	position: relative;
+	transform-style: preserve-3d;
+}
+.mixer__box--bottom {
+	transform: translateZ(-30px);
+}
+.mixer__box--left {
+	transform: rotateY(90deg) translateZ(-30px);
+	width: 60px;
+}
+.mixer__box--right {
+	transform: rotateY(90deg) translateZ(270px);
+	width: 60px;
+}
+.mixer__bg {
+	position: absolute;
+	top: -250px;
+	left: 75px;
+}
+.mixer__bg picture img {
+	width: 160px;
+	height: 250px;
+}
+/* ?======================================== Mixer Disk*/
+.mixer__right-disk,
+.mixer__left-disk {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 16%;
+	transform: translateZ(2.5px);
+	transform-style: preserve-3d;
+	background-color: #222;
+	box-shadow: inset 0 0 5px 2px #555;
+}
+.mixer__left-disk {
+	left: 15%;
+}
+.mixer__right-disk {
+	right: 15%;
+}
+.mixer__right-disk .mixer__disk--top {
+	animation: disk-rotate 1s ease infinite;
+}
+.mixer__left-disk .mixer__disk--top {
+	animation: disk-rotate 2s linear infinite;
+}
+.mixer__disk {
+	width: 40px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #222;
+	box-shadow: inset 0 0 1px 1px #555;
+}
+.mixer__disk--front {
+	transform: rotateX(90deg) translateZ(-36.5px);
+}
+.mixer__disk--back {
+	transform: rotateX(90deg)translateZ(2.5px);
+}
+.mixer__disk--top {
+	transform: translateZ(2.5px);
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	background: radial-gradient(circle, rgba(217, 105, 13, 1) 0%, rgba(12, 53, 195, 1) 32%, rgba(74, 2, 133, 1) 67%);
+	position: relative;
+	left: 2.5px;
+	top: 2.5px;
+}
+.mixer__disk--bottom {
+	height: 40px;
+	transform: translateZ(-2.5px);
+}
+.mixer__disk--left {
+	transform: rotateY(90deg) translateZ(-2.5px);
+	width: 5px;
+	height: 40px;
+}
+.mixer__disk--right {
+	transform: rotateY(90deg) translateZ(36.5px);
+	width: 5px;
+	height: 40px;
+}
+.mixer__disk--top::before {
+	content: 'Frilancer';
+	font-family: "Permanent Marker";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -282px;
+	left: 2px;
+	color: #fff;
+	font-size: 5px;
+	text-decoration: overline;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+}
+@keyframes disk-rotate {
+	0% {
+		transform: rotateZ(0deg) translateZ(2.5px);
+
+	}
+	100% {
+		transform: rotateZ(360deg) translateZ(2.5px);
+	}
+}
+/* ?======================================== Speaker */
+.speaker {
+	width: 60px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	transform-style: preserve-3d;
+	box-shadow: inset 0 0 5px 2px #555;
+}
+.speaker--left {
+	left: 10px;
+}
+.speaker--right {
+	right: 10px;
+}
+.speaker__box {
+	width: 60px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: inset 0 0 5px 2px #555;
+	background-color: #222;
+}
+.speaker__box--front {
+	transform: rotateX(90deg) translateZ(-50px) translateY(50px);
+	position: relative;
+	transform-style: preserve-3d;
+}
+.speaker__box--back {
+	transform: rotateX(-90deg) translateZ(-50px) translateY(-50px);
+}
+.speaker__box--top {
+	transform: translateZ(100px);
+}
+.speaker__box--left {
+	width: 100px;
+	transform: rotateY(90deg) translateZ(-50px) translateX(-50px);
+}
+.speaker__box--right {
+	transform: rotateY(-90deg) translateZ(-10px) translateX(50px);
+	width: 100px;
+}
+.speaker__box--front::before,
+.speaker__box--front::after {
+	content: '';
+	border: 1px solid #111;
+	position: absolute;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(51, 51, 51, 1) 50%, rgba(85, 85, 85, 1) 100%);
+	animation: speaker-move 0.5s ease infinite;
+}
+@keyframes speaker-move {
+	0% {
+		transform: translateZ(0px);
+	}
+	100% {
+		transform: translateZ(-3px);
+	}
+}
+.speaker__box--front::before {
+	top: 10px;
+	left: 12.5%;
+	width: 45px;
+	height: 45px;
+}
+.speaker__box--front::after {
+	top: 70px;
+	left: 33.333%;
+	width: 20px;
+	height: 20px;
+}
+/* ?======================================== Square */
+.top__line {
+	display: inline-block;
+}
+.top__square {
+	width: 100px;
+	height: 100px;
+}
+@keyframes flashing {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.top__square--orange {
+	background-color: orange;
+	animation: flashing 2s linear infinite 0.2s;
+}
+.top__square--green {
+	background-color: green;
+	animation: flashing 2s linear infinite 0.4s;
+}
+.top__square--yellow {
+	background-color: yellow;
+	animation: flashing 2s linear infinite 0.6s;
+}
+.top__square--red {
+	background-color: red;
+	animation: flashing 2s linear infinite 0.8s;
+}
+.top__square--blue {
+	background-color: blue;
+	animation: flashing 2s linear infinite 1s;
+}
+.top__square--violet {
+	background-color: violet;
+	animation: flashing 2s linear infinite 1.2s;
+}
+/* !======================================== FOOTER */
