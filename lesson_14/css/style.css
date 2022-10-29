@@ -1,54 +1,3 @@
-/* &display=swap */
-/* 
-@font-face {
-	font-family: "...";
-	src: url("../fonts") format("woff2"), url("../fonts") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-} 
-*/
-
-/*.
-.main__image {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: потрібно знайти відсоток висоти зображення / ширину;
-}
-.main__image img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-}*/
-
-/*
-@media (max-width: px) {
-	[class*="__container"] {
-		max-width: 970px;
-	}
-}
-@media (max-width: 991.98px){
-	[class*="__container"] {
-		max-width: 750px;
-	}
-}
-@media (max-width: 767.98px){
-	[class*="__container"] {
-			max-width: px;
-	}
-}
-@media (max-width:479.98px){
-	[class*="__container"] {
-		max-width: none;
-	}	
-}
-*/
-
-
-
 body {
 	background-color: #333;
 	color: #999;
@@ -325,6 +274,23 @@ body {
 	row-gap: 20px;
 }
 /* ?======================================== first-counter */
+.first-counter {
+	display: none;
+}
+.first-counter:target {
+	display: flex;
+}
+.first-counter:target ~ .order {
+	display: none;
+}
+.first-counter p,
+.first-counter p:hover {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+	color: #999;
+	text-decoration: none;
+}
 .first-counter__items {
 	display: flex;
 	justify-content: center;
@@ -382,6 +348,23 @@ body {
 	padding: 7px 15px;
 }
 /* ?======================================== second-counter */
+.second-counter {
+	display: none;
+}
+.second-counter:target {
+	display: flex;
+}
+.second-counter:target ~ .order {
+	display: none;
+}
+.second-counter p,
+.second-counter p:hover {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+	color: #999;
+	text-decoration: none;
+}
 .second-counter__items {
 	display: flex;
 	gap: 20px;
