@@ -100,8 +100,7 @@ body {
 	flex: 1 1 auto;
 }
 /* ?======================================== main__wrapper */
-.main__wrapper,
-.main__counter {
+.main__wrapper {
 	padding: 20px;
 	min-height: 300px;
 	max-width: 700px;
@@ -266,12 +265,6 @@ body {
 }
 .items-order__item:nth-of-type(4) {
 	order: 2;
-}
-/* ?======================================== counter */
-.counter {
-	display: flex;
-	flex-direction: column;
-	row-gap: 20px;
 }
 /* ?======================================== first-counter */
 .first-counter {
