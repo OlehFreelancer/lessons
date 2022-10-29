@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<!-- <picture class="">
+			<source srcset="" type="image/webp">
+			<img src="" alt="Image">
+		</picture> -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo"></div>
+				<ul class="header__menu menu">
+					<li><a href="#justify-content">justify-content</a></li>
+					<li><a href="#align-item">align-items</a></li>
+					<li><a href="#flex-direction">flex-direction</a></li>
+					<li><a href="#align-self">align-self</a></li>
+					<li><a href="#order">order</a></li>
+				</ul>
+				<a href="#" class="header__button">Кнопка</a>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__wrapper">
+					<div class="main__justify-content justify-content" id="justify-content">
+						<p>justify-content: <span>start;</span></p>
+						<p>justify-content: <span>center;</span></p>
+						<p>justify-content: <span>end;</span></p>
+						<p>justify-content: <span>space-between;</span></p>
+						<p>justify-content: <span>space-around;</span></p>
+						<p>justify-content: <span>space-evenly;</span></p>
+						<div class="justify-content__items items items-justify-content">
+							<!-- Чи правильно по БЄМ задати клас justify-content__item? для дочірніх елементів? -->
+							<div class="items-justify-content__item item"></div>
+							<div class="items-justify-content__item item"></div>
+							<div class="items-justify-content__item item"></div>
+							<div class="items-justify-content__item item"></div>
+						</div>
+					</div>
+					<div class="main__align-items align-items" id="align-item">
+						<p>align-items: <span>flex-start;</span></p>
+						<p>align-items: <span>center;</span></p>
+						<p>align-items: <span>flex-end;</span></p>
+						<div class="align-items__items items items-align-items">
+							<div class="items-align-items__item item"></div>
+							<div class="items-align-items__item item"></div>
+							<div class="items-align-items__item item"></div>
+							<div class="items-align-items__item item"></div>
+						</div>
+					</div>
+					<div class="main__flex-direction flex-direction" id="flex-direction">
+						<p>flex-direction: <span>flex-start;</span></p>
+						<p>flex-direction: <span>column;</span></p>
+						<p>flex-direction: <span>column-reverse;</span></p>
+						<div class="flex-direction__items items items-flex-direction">
+							<div class="items-flex-direction__item item"><span>1</span></div>
+							<div class="items-flex-direction__item item"><span>2</span></div>
+							<div class="items-flex-direction__item item"><span>3</span></div>
+							<div class="items-flex-direction__item item"><span>4</span></div>
+						</div>
+					</div>
+					<div class="main__align-self align-self" id="align-self">
+						<div class="align-self__items items items-align-self">
+							<div class="items-align-self__item item"></div>
+							<div class="items-align-self__item item"></div>
+							<div class="items-align-self__item item"></div>
+							<div class="items-align-self__item item"></div>
+						</div>
+					</div>
+					<div class="main__order order" id="order">
+						<div class="order__items items items-order">
+							<div class="items-order__item item"><span>1</span></div>
+							<div class="items-order__item item"><span>2</span></div>
+							<div class="items-order__item item"><span>3</span></div>
+							<div class="items-order__item item"><span>4</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="main__counter counter">
+					<div class="counter__first first-counter">
+						<div class="first-counter__items">
+							<div class="first-counter__item">
+								<div class="first-counter__img">
+									<img src="img/01.webp" alt="#">
+								</div>
+								<h3 class="first-counter__title">Lorem ipsum dolor</h3>
+								<p class="first-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus!</p>
+								<a href="#" class="first-counter__link">Link</a>
+							</div>
+							<div class="first-counter__item">
+								<div class="first-counter__img">
+									<img src="img/02.webp" alt="#">
+								</div>
+								<h3 class="first-counter__title">Lorem ipsum dolor</h3>
+								<p class="first-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus!</p>
+								<a href="#" class="first-counter__link">Link</a>
+							</div>
+							<div class="first-counter__item">
+								<div class="first-counter__img">
+									<img src="img/03.webp" alt="#">
+								</div>
+								<h3 class="first-counter__title">Lorem ipsum dolor</h3>
+								<p class="first-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eum?</p>
+								<a href="#" class="first-counter__link">Link</a>
+							</div>
+							<div class="first-counter__item">
+								<div class="first-counter__img">
+									<img src="img/04.webp" alt="#">
+								</div>
+								<h3 class="first-counter__title">Lorem ipsum dolor</h3>
+								<p class="first-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus!</p>
+								<a href="#" class="first-counter__link">Link</a>
+							</div>
+						</div>
+					</div>
+					<div class="counter__second second-counter">
+						<div class="second-counter__items">
+							<div class="second-counter__item">
+								<div class="second-counter__img">
+									<img src="img/01.webp" alt="#">
+								</div>
+								<h3 class="second-counter__title">Lorem ipsum dolor</h3>
+								<p class="second-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus!</p>
+								<a href="#" class="second-counter__link">Link</a>
+							</div>
+							<div class="second-counter__item">
+								<div class="second-counter__img">
+									<img src="img/02.webp" alt="#">
+								</div>
+								<h3 class="second-counter__title">Lorem ipsum dolor</h3>
+								<p class="second-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+								<a href="#" class="second-counter__link">Link</a>
+							</div>
+							<div class="second-counter__item">
+								<div class="second-counter__img">
+									<img src="img/03.webp" alt="#">
+								</div>
+								<h3 class="second-counter__title">Lorem ipsum dolor</h3>
+								<p class="second-counter__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint magnam numquam aliquid. Doloribus vitae a perspiciatis labore autem delectus!</p>
+								<a href="#" class="second-counter__link">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+	</div>
+</body>
+
+</html>

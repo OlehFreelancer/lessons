@@ -1,0 +1,427 @@
+/* &display=swap */
+/* 
+@font-face {
+	font-family: "...";
+	src: url("../fonts") format("woff2"), url("../fonts") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+} 
+*/
+
+/*.
+.main__image {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: потрібно знайти відсоток висоти зображення / ширину;
+}
+.main__image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}*/
+
+/*
+@media (max-width: px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+@media (max-width: 991.98px){
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+@media (max-width: 767.98px){
+	[class*="__container"] {
+			max-width: px;
+	}
+}
+@media (max-width:479.98px){
+	[class*="__container"] {
+		max-width: none;
+	}	
+}
+*/
+
+
+
+body {
+	background-color: #333;
+	color: #999;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+[class*="__container"] {
+	max-width: 830px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/* *======================================== menu*/
+.menu {
+	row-gap: 20px;
+	column-gap: 15px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+.menu li a,
+.main__wrapper p {
+	border-right: 2px solid #555;
+	border-left: 2px solid #555;
+	padding: 5px 15px;
+	border-radius: 10px;
+}
+.main__wrapper p {
+	cursor: default;
+}
+.main__wrapper p span {
+	color: #be1313;
+}
+.menu li a:hover,
+.main__wrapper p:hover {
+	text-decoration: underline;
+	border-right: 2px solid #999;
+	border-left: 2px solid #999;
+}
+
+/* *======================================== items*/
+.items {
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0 0 5px 0 #999;
+	background-color: #002f33;
+	border-radius: 10px;
+}
+.item {
+	height: 50px;
+	width: 50px;
+	background-color: #3d002b;
+	box-shadow: inset 0 0 5px 0 #999;
+}
+/* !======================================== HEADER */
+.header {
+	background-color: #003a1a;
+	padding: 30px 0;
+}
+.header__container {
+	min-height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+/* ?======================================== header__logo */
+.header__logo {
+	flex: 0 0 auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #be1313;
+}
+/* ?======================================== header__button */
+.header__button {
+	padding: 7px 20px;
+	background-color: #53003b;
+	border-radius: 10px;
+	font-weight: 700;
+	box-shadow: 0 2px 3px 0 #000;
+	transition: all 0.3s linear 0s;
+}
+.header__button:hover {
+	box-shadow: 0 1px 2px 0 #000;
+}
+.header__button:active {
+	box-shadow: inset 0 0 0 0 #000;
+}
+/* !======================================== MAIN */
+.main {
+	padding: 30px 0;
+	flex: 1 1 auto;
+}
+/* ?======================================== main__wrapper */
+.main__wrapper,
+.main__counter {
+	padding: 20px;
+	min-height: 300px;
+	max-width: 700px;
+	margin: 0 auto;
+	background-color: #414141;
+	border-radius: 10px;
+	box-shadow: inset 0 0 10px 2px #999;
+	display: flex;
+	justify-content: center;
+}
+.main__wrapper {
+	margin-bottom: 30px;
+}
+/* ?======================================== justify-content */
+.justify-content:target {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.justify-content:target ~ .order {
+	display: none;
+}
+.justify-content {
+	display: none;
+}
+.items-justify-content {
+	flex: 1 1 100%;
+	min-height: 100px;
+}
+/* *======================================== justify-content p*/
+.justify-content p:nth-child(2):hover ~ .justify-content__items {
+	justify-content: center;
+}
+.justify-content p:nth-child(3):hover ~ .justify-content__items {
+	justify-content: end;
+}
+.justify-content p:nth-child(4):hover ~ .justify-content__items {
+	justify-content: space-between;
+}
+.justify-content p:nth-child(5):hover ~ .justify-content__items {
+	justify-content: space-around;
+}
+.justify-content p:nth-child(6):hover ~ .justify-content__items {
+	justify-content: space-evenly;
+}
+/* ?======================================== align-items */
+.align-items:target {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.align-items:target ~ .order {
+	display: none;
+}
+.align-items {
+	display: none;
+}
+.items-align-items {
+	justify-content: center;
+	min-height: 200px;
+	align-items: flex-start;
+	flex: 1 1 100%;
+}
+/* *======================================== align-items p*/
+.align-items p:nth-child(2):hover ~ .align-items__items {
+	align-items: center;
+}
+.align-items p:nth-child(3):hover ~ .align-items__items {
+	align-items: flex-end;
+}
+/* ?======================================== flex-direction */
+.flex-direction:target {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.flex-direction:target ~ .order {
+	display: none;
+}
+.flex-direction {
+	display: none;
+}
+.items-flex-direction {
+	justify-content: center;
+	min-height: 200px;
+	align-items: center;
+	flex: 1 1 100%;
+}
+.items-flex-direction__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	font-weight: 700;
+}
+/* *======================================== flex-direction p*/
+.flex-direction p:nth-child(2):hover ~ .flex-direction__items {
+	flex-direction: column;
+}
+.flex-direction p:nth-child(3):hover ~ .flex-direction__items {
+	flex-direction: column-reverse;
+}
+/* ?======================================== align-self */
+.align-self:target {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+}
+.align-self:target ~ .order {
+	display: none;
+}
+.align-self {
+	display: none;
+}
+.align-self__items {
+	display: flex;
+	min-height: 250px;
+}
+.items-align-self__item:nth-of-type(1) {
+	align-self: flex-start;
+}
+.items-align-self__item:nth-of-type(2) {
+	align-self: flex-end;
+}
+.items-align-self__item:nth-of-type(3) {
+	align-self: center;
+}
+.items-align-self__item:nth-of-type(4) {
+	align-self: flex-start;
+}
+/* ?======================================== order */
+.order:target {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+}
+.items-order {
+	display: flex;
+	min-height: 250px;
+}
+.items-order__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	font-weight: 700;
+}
+.items-order__item:nth-of-type(1) {
+	order: 3;
+}
+.items-order__item:nth-of-type(2) {
+	order: 1;
+}
+.items-order__item:nth-of-type(3) {
+	order: 4;
+}
+.items-order__item:nth-of-type(4) {
+	order: 2;
+}
+/* ?======================================== counter */
+.counter {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+/* ?======================================== first-counter */
+.first-counter__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+/* 600/660*100-100=9.0909/4=2.2727-25=22.7272 */
+.first-counter__item {
+	flex: 0 1 22.7272%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	align-items: center;
+	min-width: 150px;
+	box-shadow: inset 0 0 10px 2px #999;
+	padding: 10px;
+	border-radius: 10px;
+}
+.first-counter__item:hover .first-counter__img img {
+	transform: scale(1.1);
+}
+.first-counter__img {
+	position: relative;
+	overflow: hidden;
+}
+/* Підскажіть будь ласка чоту в даному випадку не працює Transition */
+.first-counter__img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: all 5s linear 0s;
+}
+.first-counter__item:hover .first-counter__img::before {
+	background-color: rgba(0, 0, 0, 0);
+}
+.first-counter__img img {
+	width: 100%;
+	height: 100px;
+	transition: all 0.5s linear 0s;
+}
+.first-counter__title {
+	font-weight: 600;
+}
+.first-counter__text {
+	font-size: 14px;
+	flex: 1 1 auto;
+}
+.first-counter__link {
+	background-color: #002f33;
+	border-radius: 10px;
+	padding: 7px 15px;
+}
+/* ?======================================== second-counter */
+.second-counter__items {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.second-counter__item {
+	flex: 0 1 31.3030%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	align-items: center;
+	box-shadow: inset 0 0 10px 2px #999;
+	padding: 10px;
+	border-radius: 10px;
+	min-width: 150px;
+}
+.second-counter__img {
+	width: 100%;
+	height: 100px;
+	transition: all 0.5s linear 0s;
+}
+.second-counter__img img {
+	width: 100%;
+	height: 100px;
+	transition: all 0.5s linear 0s;
+}
+.second-counter__title {
+	font-weight: 600;
+}
+.second-counter__text {
+	font-size: 14px;
+	flex: 1 1 auto;
+}
+.second-counter__link {
+	background-color: #002f33;
+	border-radius: 10px;
+	padding: 7px 15px;
+}
+/* !======================================== FOOTER */
+.footer {
+	padding: 30px 0;
+}
