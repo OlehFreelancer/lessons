@@ -77,10 +77,10 @@ body {
 	letter-spacing: 0.5px;
 	line-height: 1.3;
 	color: #FF3F3A;
-	transition: color 0.3s linear 0s;
+	transition: color 0.4s linear 0s;
 }
 .button:hover {
-	animation: bg 0.7s linear 1 alternate running 0s forwards;
+	animation: bg 1s linear 1 alternate running 0s forwards;
 	color: #fff;
 }
 @keyframes bg {
