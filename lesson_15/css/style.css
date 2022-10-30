@@ -189,6 +189,9 @@ body {
 	background: url(../img/icon/user.svg)0 0 no-repeat;
 	padding-left: 28px;
 }
+.header__login:hover{
+	text-decoration: underline;
+}
 /* !======================================== MAIN */
 .main {
 	flex: 1 1 auto;
