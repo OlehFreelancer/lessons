@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+@import "common.css";
+body {
+	font-family: "Lato";
+	color: #424551;
+	line-height: 1.6;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* !======================================== HEADER */
+.header {}
+
+/* !======================================== MAIN */
+.main {
+	padding: 180px 0;
+	background-color: #E5E5E5;
+}
+.main__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main__img {
+	flex: 0 1 35.3%;
+	align-self: center;
+}
+.main__img img {
+	max-width: 100%;
+	margin-left: -15px;
+}
+.body-main {
+	padding-left: 90px;
+	flex: 0 1 64.7%;
+}
+.body-main__subtitle:not(:last-child) {
+	margin-bottom: 8px;
+}
+.body-main__title:not(:last-child) {
+	margin-bottom: 40px;
+}
+.form input::placeholder {
+	color: #9A9CA5;
+	line-height: 1.6;
+	background-color: #fff;
+}
+.form input:focus,
+.form textarea:focus {
+	border: 1px solid rgba(255, 63, 58, 0.4);
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: none;
+}
+.form textarea:focus {
+	padding-top: 12px;
+	padding-left: 15px;
+}
+.form label:not(:last-child) {
+	margin-bottom: 8px;
+}
+.form__user {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12.5px 24px;
+}
+.form__user input {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding-left: 16px;
+	min-height: 52px;
+}
+.form__user input:not(:last-child) {
+	margin-bottom: 24px;
+}
+.form__first-column {
+	flex: 0 1 50%;
+	padding: 0 12.5px;
+}
+.form__second-column {
+	flex: 0 1 50%;
+	padding: 0 12.5px;
+}
+.form textarea {
+	min-height: 128px;
+	width: 100%;
+	padding-top: 13px;
+	padding-left: 16px;
+	background-color: #fff;
+}
+.form textarea:not(:last-child) {
+	margin-bottom: 40px;
+}
+.form__active {
+	display: flex;
+	row-gap: 24px;
+	flex-wrap: wrap;
+}
+.form__check {
+	flex: 0 1 50%;
+	padding-right: 50px;
+	position: relative;
+}
+.check__input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.check__label {
+	display: inline-flex;
+	cursor: pointer;
+	gap: 15px;
+}
+.check__label::before {
+	content: '';
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	background-color: #FF3F3A;
+	border-radius: 3px;
+	border: 1px solid #FF3F3A;
+	position: relative;
+	top: 5px;
+}
+.check__input:checked + .check__label::before {
+	background: #FF3F3A url(../img/check.svg) 50%/70% no-repeat;
+}
+.form__button {
+	flex: 0 1 50%;
+	padding: 16px 117px;
+}
+.form__subtitle:not(:last-child) {
+	margin-bottom: 24px;
+}
+.form__radio {
+	display: inline-flex;
+	position: relative;
+	flex-direction: column;
+	margin-bottom: 24px;
+}
+.radio__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.radio__label {
+	display: flex;
+	gap: 12px;
+	cursor: pointer;
+}
+.radio__label::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	flex: 0 0 16px;
+	background: url(../img/ellipse.svg)0 0 no-repeat;
+	position: relative;
+	top: 5px;
+}
+.radio__input:checked + .radio__label::before {
+	border-radius: 50%;
+	background: #FF3F3A url(../img/ellipse-stroke.svg)50%/100% no-repeat;
+}
+/* !======================================== FOOTER */
+.footer {}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container"></div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__img">
+					<img src="img/illustration.svg" alt="Illustration">
+				</div>
+				<div class="main__body body-main">
+					<h3 class="body-main__subtitle subtitle">Any questions?</h3>
+					<h2 class="body-main__title title">Drop us a line</h2>
+					<form class="body-main__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+						<div class="form__user">
+							<div class="form__first-column">
+								<label for="user-name">First Name*</label>
+								<input type="text" name="user-name" id="user-name" placeholder="Your first name" required>
+								<label for="mail">Email*</label>
+								<input type="email" name="mail" id="mail" placeholder="Your working email" required>
+							</div>
+							<div class="form__second-column">
+								<label for="user-last-name">Last Name*</label>
+								<input type="text" name="user-last-name" id="user-last-name" placeholder="Your last name" required>
+								<label for="tel">Phone</label>
+								<input type="tel" name="tel" id="tel" placeholder="Your phone number">
+							</div>
+						</div>
+						<label for="message">Message*</label>
+						<textarea name="message" id="message" placeholder="Your message" required></textarea>
+						<h3 class="form__subtitle subtitle">Do you like this form?</h3>
+						<div class="form__radio radio">
+							<input type="radio" class="radio__input" name="radio" value="like" required id="like">
+							<label class="radio__label" for="like"><span>Like</span></label>
+							<input type="radio" class="radio__input" name="radio" value="dislike" required id="dislike">
+							<label class="radio__label" for="dislike"><span>Dislike</span></label>
+						</div>
+						<div class="form__active">
+							<div class="form__check check">
+								<input class="check__input" type="checkbox" required name="check" id="check" value="yes">
+								<label class="check__label" for="check"><span>I agree to receive communications from Createx Online School</span></label>
+							</div>
+							<button class="form__button large-button button--bg" type="submit"><span>Send message</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+	</div>
+</body>
+
+</html>
