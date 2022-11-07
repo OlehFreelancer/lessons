@@ -30,7 +30,7 @@
 	height: 100%;
 	opacity: 0;
 	background: linear-gradient(55.95deg, #c6322c 0%, #b74604 100%);
-	transition: opacity 0.4s linear 0s;
+	transition: opacity 0.3s linear 0s;
 }
 .button--bg:hover::before {
 	opacity: 1;
@@ -58,7 +58,7 @@
 @keyframes bg {
 	0% {
 		position: relative;
-		opacity: 0.4;
+		opacity: 0.3;
 		background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 	}
 	100% {
