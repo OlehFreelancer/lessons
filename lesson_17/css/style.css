@@ -604,8 +604,20 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	padding: 1px 8px;
-	background-color: #03CEA4;
 	border-radius: 4px;
+	background-color: #03CEA4;
+}
+.item__profesion--blue {
+	background-color: #5A87FC;
+}
+.item__profesion--green {
+	background-color: #03CEA4;
+}
+.item__profesion--red {
+	background-color: #F52F6E;
+}
+.item__profesion--orange {
+	background-color: #F89828;
 }
 .item__title {
 	color: #1E212C;
