@@ -600,7 +600,7 @@ body {
 	align-items: flex-start;
 }
 .item__profesion {
-	color: fff;
+	color: #fff;
 	font-size: 14px;
 	line-height: 1.5;
 	padding: 1px 8px;
@@ -693,8 +693,8 @@ body {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		top: center;
-		left: center;
+		top: 0;
+		left: 0;
 		object-fit: cover;
 		z-index: 3;
 	}
