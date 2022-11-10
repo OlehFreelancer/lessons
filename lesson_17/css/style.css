@@ -578,6 +578,9 @@ body {
 	gap: 30px;
 	flex-wrap: wrap;
 }
+.ready__row{
+	flex: 0 1 48.78%;
+}
 .item {
 	display: flex;
 	background: #FFFFFF;
