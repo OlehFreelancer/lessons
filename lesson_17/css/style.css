@@ -576,10 +576,6 @@ body {
 .ready__items {
 	display: flex;
 	gap: 30px;
-	flex-wrap: wrap;
-}
-.ready__row{
-	flex: 0 1 48.78%;
 }
 .item {
 	display: flex;
