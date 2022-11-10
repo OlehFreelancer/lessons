@@ -576,6 +576,7 @@ body {
 .ready__items {
 	display: flex;
 	gap: 30px;
+	flex-wrap: wrap;
 }
 .item {
 	display: flex;
